@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "csId": {
+      "type": ["integer", "null"]
+    },
+    "batchId": {
+      "type": ["integer", "null"]
+    },
+    "classNo": {
+      "type": ["integer", "null"]
+    },
+    "classDate": {
+      "type": ["string", "null"]
+    },
+    "classTopic": {
+      "type": ["string", "null"]
+    },
+    "classStatus": {
+      "type": ["string", "null"]
+    },
+    "classStaffId": {
+      "type": ["string", "null"]
+    },
+    "classDescription": {
+      "type": ["string", "null"]
+    },
+    "classComments": {
+      "type": ["string", "null"]
+    },
+    "classNotes": {
+      "type": ["string", "null"]
+    },
+    "classRecordingPath": {
+      "type": ["string", "null"]
+    },
+    "batchName": {
+      "type": ["string", "null"]
+    },
+    "classScheduledDates": {
+      "type": "array",
+      "items": [
+        {
+          "type": ["string", "null"]
+        },
+        {
+          "type": ["string", "null"]
+        }
+      ]
+    }
+  },
+  "required": [
+    "csId",
+    "batchId",
+    "classNo",
+    "classDate",
+    "classTopic",
+    "classStatus",
+    "classStaffId",
+    "classDescription",
+    "classComments",
+    "classNotes",
+    "classRecordingPath",
+    "batchName",
+    "classScheduledDates"
+  ]
+}
