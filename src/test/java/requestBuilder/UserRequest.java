@@ -1,13 +1,13 @@
 package requestBuilder;
 
+import static io.restassured.RestAssured.given;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import org.codehaus.groovy.transform.sc.ListOfExpressionsExpression;
 import org.testng.Assert;
 
-import static io.restassured.RestAssured.given;
 import common.ExcelReader;
 import common.LoggerLoad;
 import common.TestContext;
@@ -16,8 +16,6 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.path.json.exception.JsonPathException;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import payload.Class_POJO;
-import payload.Program_POJO;
 import payload.User_POJO;
 import payload.User_PUT_POJO;
 import payload.User_UpdatePgmBatch_PUT_POJO;

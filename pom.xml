@@ -19,12 +19,7 @@
 <version>5.5.0</version>
 <scope>test</scope>
 </dependency>
-<!--  https://mvnrepository.com/artifact/io.rest-assured/xml-path  -->
-<dependency>
-<groupId>io.rest-assured</groupId>
-<artifactId>xml-path</artifactId>
-<version>5.5.0</version>
-</dependency>
+
 <!--  https://mvnrepository.com/artifact/io.rest-assured/json-
 -validator  -->
 <dependency>
@@ -32,12 +27,7 @@
 <artifactId>json-schema-validator</artifactId>
 <version>5.5.0</version>
 </dependency>
-<!--  https://mvnrepository.com/artifact/org.json/json  -->
-<dependency>
-<groupId>org.json</groupId>
-<artifactId>json</artifactId>
-<version>20250107</version>
-</dependency>
+
 <!--  https://mvnrepository.com/artifact/com.google.code.gson/gson  -->
 <dependency>
 <groupId>com.google.code.gson</groupId>
@@ -86,12 +76,6 @@
 <groupId>org.apache.logging.log4j</groupId>
 <artifactId>log4j-core</artifactId>
 <version>2.24.2</version>
-</dependency>
-<!--  https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer  -->
-<dependency>
-<groupId>io.cucumber</groupId>
-<artifactId>cucumber-picocontainer</artifactId>
-<version>7.21.0</version>
 </dependency>
 <!--  https://mvnrepository.com/artifact/org.slf4j/slf4j-api  -->
 <dependency>

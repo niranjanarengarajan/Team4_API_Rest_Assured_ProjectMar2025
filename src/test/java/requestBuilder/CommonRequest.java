@@ -2,23 +2,17 @@ package requestBuilder;
 
 	
 
+import static io.restassured.RestAssured.given;
+
+import java.util.Map;
+
+import org.testng.asserts.SoftAssert;
+
 import common.ConfigReader;
-import common.LoggerLoad;
-import common.TestContext;
 import common.Utils;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
-import payload.Login_POJO;
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 
 public class CommonRequest {
     private RequestSpecification requestspecification;
@@ -63,6 +57,15 @@ public class CommonRequest {
 
 		
     public void validateStatusCode(Response response, Map<String, String> testData) {
+/*******************      Soft Assert
+    	Soft Assert collects errors during @Test is running. It does not throw an exception when an assert fails. 
+    	The execution will continue with the next step after the assert statement. 
+    	If you need to throw an exception (if such occurs), you need to use assertAll() method as a last statement in the @Test. 
+    	The test suite again continues with next @Test as it is.
+
+    	Unlike Hard Results, for Soft Asserts, we need to create an object to use them. This is how it looks:*********************/
+
+
         SoftAssert softAssert = new SoftAssert();  // Create SoftAssert instance
         
         int expectedStatusCode = (int) Double.parseDouble(testData.get("expectedStatuscode"));
